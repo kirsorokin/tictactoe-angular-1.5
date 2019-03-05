@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="tictactoeApp">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body ng-controller="tictactoeCtrl">
+        <div class="fieldWrapperTop">
+        <div class="fieldWrapper">
+            <table class="field">
+                <tbody>
+                    <tr ng-repeat="row in field track by $index">
+                        <td ng-repeat="cell in row track by $index"
+                            ng-style="{'width': CELL_SIZE + 'px', 'height': CELL_SIZE + 'px'}"
+                            ng-click="processMove($parent.$index, $index)">
+
+                            {{cell}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

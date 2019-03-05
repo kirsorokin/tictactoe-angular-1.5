@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+div.fieldWrapperTop {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+div.fieldWrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+table.field {
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+table.field td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 150%;
+    font-family: sans-serif;
+}
